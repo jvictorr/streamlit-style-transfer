@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 import stylization_script as stylize
-import training_script as train
 
 st.set_page_config(page_title="Ferramenta de estilização de imagem", page_icon="🎨")
 

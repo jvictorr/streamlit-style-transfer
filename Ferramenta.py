@@ -66,7 +66,7 @@ if content_valid and style_valid:
             content_image.save('data/content-images/content.jpg')
 
             output = stylize.run('content.jpg', style_image["name"])
-            output_image = output+'\stylized.jpg'
+            output_image = output+'/stylized.jpg'
 
     if output_image is not None:
         col1, col2, col3 = st.columns([1,2,1])

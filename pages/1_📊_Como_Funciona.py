@@ -1,19 +1,19 @@
 import streamlit as st
 from PIL import Image
 
-st.set_page_config(page_title="Tutorial: Transferência de Estilo de Gatys", layout="wide")
+st.set_page_config(page_title="Transferência de Estilo de Gatys", layout="wide")
 
-st.title("📚 Tutorial Simples: Transferência de Estilo de Gatys")
+st.title("📚 Como Funciona: Transferência de Estilo de Gatys")
 
 st.write(
     """
-    A **Transferência de Estilo Neural (Neural Style Transfer)** é uma técnica criada por
-    *Gatys, Ecker e Bethge* que combina **o conteúdo de uma imagem** com **o estilo de outra**.
+    A **Transferência de Estilo Neural (Neural Style Transfer)** é uma técnica abordada em diversos estudos 
+    que combina **o conteúdo de uma imagem** com **o estilo de outra**.
     
-    Ela usa redes neurais convolucionais (CNNs), especialmente a VGG19, para extrair padrões
+    A tecnica se aproveita de redes neurais convolucionais (CNNs) (em especial a VGG19) para extrair padrões
     de conteúdo e estilo e gerar uma imagem nova.
     
-    Neste mini tutorial interativo, você verá como o processo funciona de forma visual e simples.
+    Aqui mostramos resumidamente como funciona esse processo de forma visual e simples.
     """
 )
 
@@ -23,14 +23,14 @@ content_img = Image.open("content.jpg")
 
 col1, col2, col3 = st.columns([2,3,2])
 with col2:
-    st.image(content_img, caption="Imagem de Conteúdo", width='stretch')
+    st.image(content_img, caption="Imagem de Conteúdo. (Taj Mahal)", width='stretch')
 
 st.subheader("2️⃣ Imagem de Estilo")
 st.write("É a imagem que fornece as características de estilo: cores, texturas e padrões usados na composição final.")
 style_img = Image.open("style.jpg")
 col1, col2, col3 = st.columns([2,3,2])
 with col2:
-    st.image(style_img, caption="Imagem de Estilo", width='stretch')
+    st.image(style_img, caption="Imagem de Estilo. (Arte Em Vidro)", width='stretch')
 
 st.markdown("---")
 
@@ -75,7 +75,7 @@ st.write(
     """
 )
 
-#st.image("loss_function_diagram.jpg", caption="Esquema da Função de Custo", width='stretch')
+# st.image("loss_function_diagram.jpg", caption="Esquema da Função de Custo", width='stretch')
 
 st.markdown("---")
 

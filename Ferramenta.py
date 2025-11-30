@@ -4,6 +4,11 @@ import stylization_script as stylize
 
 st.set_page_config(page_title="Ferramenta de estilização de imagem", page_icon="🎨")
 
+st.set_page_config(
+    page_title="Hello",
+    page_icon="👋",
+)
+
 
 st.write("## Ferramenta de transferência de estilo")
 
@@ -21,7 +26,7 @@ estilos = {
 }
 
 
-with st.sidebar.expander("ℹ️ Image Guidelines"):
+with st.sidebar.expander("ℹ️ Diretrizes de imagem"):
     st.write("""
     - Tamanho máximo do arquivo: 10MB
     - Formatos suportados: PNG, JPG, JPEG
